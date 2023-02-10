@@ -144,6 +144,12 @@ alias sz="source ~/.zshrc"
 alias vip="vim ~/.scripts/status_panel"
 alias rcd="vim ~/Documents/records/$(date "+%Y-%m-%d.md")"
 alias conf='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias conf_add='conf add -A'
+alias conf_status='conf status'
+alias conf_commit='commit -m'
+alias conf_push='conf push -u origin main'
+
+
 
 # local proxy on & off
 alias proxyon="export all_proxy=http://192.168.0.132:7890"
