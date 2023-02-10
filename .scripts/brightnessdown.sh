@@ -1,0 +1,1 @@
+backlight decr 5
