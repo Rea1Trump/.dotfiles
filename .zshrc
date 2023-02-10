@@ -183,8 +183,8 @@ alias virv="vim ~/.config/river/init"
 
 
 
-
-alias bat="sysctl hw.acpi.battery.life"
+alias cat="bat"
+alias batt="sysctl hw.acpi.battery.life"
 alias cdrw="cd ~/Works/Rust"
 # alias nf="neofetch --acsii_distro"
 
