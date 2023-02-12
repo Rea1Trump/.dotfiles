@@ -185,7 +185,7 @@ alias vicg="vim ~/.config/cagebreak/config"
 
 
 alias cat="bat"
-alias batt="sysctl hw.acpi.battery.life"
+alias battery="echo 'Battery life: $(sysctl -n hw.acpi.battery.life)'"
 alias cdrw="cd ~/Works/Rust"
 # alias nf="neofetch --acsii_distro"
 
