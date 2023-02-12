@@ -11,9 +11,10 @@ background 0.25 0.21 0.2
 
 # Top key bindings
 
-definekey top L-Return exec alacritty
+#definekey top L-Return exec alacritty
+definekey top L-Return exec foot
 definekey top L-Escape exec wlogout
-definekey top L-space exec foot
+#definekey top L-space exec foot
 definekey top A-f exec firefox
 definekey top A-l exec libreoffice
 
@@ -27,6 +28,16 @@ definekey top L-q close
 #escape C-q
 
 #bind L-Retuen
+#------------------------------------------------------------------------------#
+
+
+#iput touchpad tap enabled
+#input touchpad natural_scroll enabled
+
+input * tap enabled
+input pointer-2:7:SynPS/2_Synaptics_TouchPad natural_scroll enabled
+
+#------------------------------------------------------------------------------#
 
 
 

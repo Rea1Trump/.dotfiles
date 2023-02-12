@@ -179,7 +179,8 @@ alias vihb="vim ~/.config/hypr/hyprland.conf"
 ## river
 alias wmrv="river"
 alias virv="vim ~/.config/river/init"
-
+## cagebreak
+alias vicg="vim ~/.config/cagebreak/config"
 
 
 
