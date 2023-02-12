@@ -29,13 +29,12 @@ definekey top L-q close
 
 #bind L-Retuen
 #------------------------------------------------------------------------------#
+#                                  Input                                       #
+#- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - #
+# Well, there even no example config for the input device.
+input type:touchpad tap enabled
+input type:touchpad natural_scroll enabled
 
-
-#iput touchpad tap enabled
-#input touchpad natural_scroll enabled
-
-input * tap enabled
-input pointer-2:7:SynPS/2_Synaptics_TouchPad natural_scroll enabled
 
 #------------------------------------------------------------------------------#
 
