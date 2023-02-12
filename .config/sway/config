@@ -4,8 +4,11 @@
 #
 # Read `man 5 sway` for a complete reference.
 
-### Variables
 #
+
+
+
+### Variables
 # Logo key. Use Mod1 for Alt.
 set $mod Mod4
 # Home row direction keys, like vim
@@ -20,9 +23,19 @@ set $term alacritty
 # on the original workspace that the command was run on.
 #set $menu dmenu_path | dmenu | xargs swaymsg exec --
 set $menu rofi -show drun -theme arch 
+set $wlogout wlogout
+set $swaylock "$HOME/.scripts/lock.sh"
+
 
 ### Output configuration
 #
+
+default_border pixel 1 
+default_floating_border none
+gaps inner 2
+gaps outer 0
+
+
 # Default wallpaper (more resolutions are available in /usr/local/share/backgrounds/sway/)
 output * bg /usr/local/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
 #
@@ -37,9 +50,9 @@ output * bg /usr/local/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png 
 # Example configuration:
 #
  exec swayidle -w \
-          timeout 300 'swaylock -f -c 000000' \
+          timeout 300 '$HOME/.scripts/lock.sh' \
           timeout 600 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' \
-          before-sleep 'swaylock -f -c 000000'
+          before-sleep '$HOME/.scripts/lock.sh'
 #
 # This will lock your screen after 300 seconds of inactivity, then turn off
 # your displays after another 300 seconds, and turn your screens back on when
@@ -49,12 +62,12 @@ output * bg /usr/local/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png 
 #
 # Example configuration:
 #
-#   input "2:14:SynPS/2_Synaptics_TouchPad" {
+   input "2:7:SynPS/2_Synaptics_TouchPad" {
 #       dwt enabled
-#       tap enabled
-#       natural_scroll enabled
-#       middle_emulation enabled
-#   }
+       tap enabled
+       natural_scroll enabled
+       middle_emulation enabled
+   }
 #
 # You can get the names of your inputs by running: swaymsg -t get_inputs
 # Read `man 5 sway-input` for more information about this section.
@@ -71,6 +84,8 @@ output * bg /usr/local/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png 
 
     # Start your launcher
     bindsym $mod+Space exec $menu
+    bindsym $mod+Escape exec $wlogout
+	bindsym Mod1+l exec $swaylock
 
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
@@ -197,22 +212,32 @@ mode "resize" {
 }
 bindsym $mod+r mode "resize"
 
+
+
+bar {
+		swaybar_command waybar
+}
+
+
+
+
+
+
 #
 # Status Bar:
 #
 # Read `man 5 sway-bar` for more information about this section.
-bar {
-    position top
-
+#bar {
+#    position top
     # When the status_command prints a new line to stdout, swaybar updates.
     # The default just shows the current date and time.
-    status_command while date +'%Y-%m-%d %I:%M:%S %p'; do sleep 1; done
+#    status_command while date +'%Y-%m-%d %I:%M:%S %p'; do sleep 1; done
 
-    colors {
-        statusline #ffffff
-        background #323232
-        inactive_workspace #32323200 #32323200 #5c5c5c
-    }
-}
+#    colors {
+#        statusline #ffffff
+#        background #323232
+#        inactive_workspace #32323200 #32323200 #5c5c5c
+#   }
+#}
 
 include /usr/local/etc/sway/config.d/*

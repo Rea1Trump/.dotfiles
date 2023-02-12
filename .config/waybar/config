@@ -1,41 +1,87 @@
 {
     "layer": "top", // Waybar at top layer
     "position": "top", // Waybar position (top|bottom|left|right)
-    "height": 20, // Waybar height (to be removed for auto height)
+    "height": 24, // Waybar height (to be removed for auto height)
     // "width": 1280, // Waybar width
     "spacing": 4, // Gaps between modules (4px)
-    // Choose the order of the modules
-    //"modules-left": ["sway/workspaces", "sway/mode", "sway/scratchpad", "custom/media"],
-    //"modules-center": ["sway/window"],
-    //"modules-right": ["mpd", "idle_inhibitor", "pulseaudio", "network", "cpu", "memory", "temperature", "backlight", "keyboard-state", "sway/language", "battery", "battery#bat2", "clock", "tray"],
-    //"modules-left":["tray","backlight","keyboard-state"],
-	"modules-left":["custom/wifi","custom/audioAndlight"],
-	"modules-center":["clock"],
-	"modules-right":["cpu","temperature","memory","battery"],
-	
 
-	// Modules configuration
-    // "sway/workspaces": {
-    //     "disable-scroll": true,
-    //     "all-outputs": true,
-    //     "format": "{name}: {icon}",
-    //     "format-icons": {
-    //         "1": "",
-    //         "2": "",
-    //         "3": "",
-    //         "4": "",
-    //         "5": "",
-    //         "urgent": "",
-    //         "focused": "",
-    //         "default": ""
-    //     }
-    // },
+
+
+
+//-------------------------------------------------------------------------------------------------//
+//                                                                                                 //
+//                           Choose the order of the modules                                       //
+//                                                                                                 //
+//-------------------------------------------------------------------------------------------------//
+
+
+
+//- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -// 
+// collection 1
+
+
+
+    "modules-left": ["sway/workspaces", "sway/mode", "sway/scratchpad", "custom/media"],
+    "modules-center": ["sway/window"],
+    "modules-right": ["tray", "idle_inhibitor", "cpu", "memory", "temperature", "keyboard-state", "sway/language", "battery", "clock"],
+    
+
+
+	//"modules-right": ["tray","mpd", "idle_inhibitor", "sndio", "cpu", "memory", "temperature", "backlight", "keyboard-state", "sway/language", "battery", "clock"],
+
+//- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -// 
+
+
+
+
+
+
+//- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -// 
+// collection 2
+
+
+	//"modules-left":["tray","backlight","keyboard-state"],
+	//"modules-left":["custom/wifi","custom/audioAndlight"],
+	//"modules-center":["clock"],
+	//"modules-right":["cpu","temperature","memory","battery"],
+	
+//- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -// 
+
+
+//-------------------------------------------------------------------------------------------------//
+//                                                                                                 //
+//                                        Modules                                                  //
+//                                                                                                 //
+//-------------------------------------------------------------------------------------------------//
+
+
+
+//- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -// 
+	"sway/workspaces": {
+         "disable-scroll": true,
+         "all-outputs": true,
+         "format": "{name}: {icon}",
+         "format-icons": {
+             "1": "",
+             "2": "",
+             "3": "",
+             "4": "",
+             "5": "",
+             "urgent": "",
+             "focused": "",
+             "default": ""
+         }
+     },
+
+
+//- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -// 
 	"disk": {
     	"interval": 30,
     	"format": "Only {percentage_free}% remaining on {path}",
     	"path": "/"
 	},
 
+//- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -// 
     "keyboard-state": {
         "numlock": true,
         "capslock": true,
@@ -45,9 +91,12 @@
             "unlocked": ""
         }
     },
+
+//- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -// 
     "sway/mode": {
         "format": "<span style=\"italic\">{}</span>"
     },
+//- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -// 
     "sway/scratchpad": {
         "format": "{icon} {count}",
         "show-empty": false,
@@ -55,11 +104,13 @@
         "tooltip": true,
         "tooltip-format": "{app}: {title}"
     },
+//- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -// 
 
 	"sndio": {
     	"format": "{raw_value} 🎜",
     	"scroll-step": 3
 	},
+//- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -// 
 
 
     "mpd": {
@@ -88,6 +139,7 @@
         "tooltip-format": "MPD (connected)",
         "tooltip-format-disconnected": "MPD (disconnected)"
     },
+//- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -// 
     "idle_inhibitor": {
         "format": "{icon}",
         "format-icons": {
@@ -95,22 +147,27 @@
             "deactivated": ""
         }
     },
+//- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -// 
     "tray": {
-        // "icon-size": 21,
+        "icon-size": 19,
         "spacing": 10
     },
+//- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -// 
     "clock": {
         // "timezone": "America/New_York",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
         "format-alt": "{:%Y-%m-%d}"
     },
+//- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -// 
     "cpu": {
         "format": "{usage}% ",
         "tooltip": false
     },
+//- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -// 
     "memory": {
         "format": "{}% "
     },
+//- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -// 
     "temperature": {
         // "thermal-zone": 2,
         // "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
@@ -119,11 +176,13 @@
         "format": "{temperatureC}°C {icon}",
         "format-icons": ["", "", ""]
     },
+//- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -// 
     "backlight": {
          "device": "intel_backlight0",
         "format": "{percent}% {icon}",
         "format-icons": ["", "", "", "", "", "", "", "", ""]
     },
+//- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -// 
     "battery": {
         "states": {
             // "good": 95,
@@ -138,9 +197,11 @@
         // "format-full": "",
         "format-icons": ["", "", "", "", ""]
     },
+//- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -// 
     "battery#bat2": {
         "bat": "BAT2"
     },
+//- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -// 
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
         "format-wifi": "{essid} ({signalStrength}%) ",
@@ -150,6 +211,7 @@
         "format-disconnected": "Disconnected ⚠",
         "format-alt": "{ifname}: {ipaddr}/{cidr}"
     },
+//- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -// 
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
         "format": "{volume}% {icon} {format_source}",
@@ -198,9 +260,17 @@
 	"interval": 1,
 	"exec":"$HOME/.scripts/audioAndlight.sh"
 
-	}
+	},
+
+
+
+
+
 
 //-------------------------------------------------------
+
+
+
 
 
 ///////////////////////////////////////////////////////////
