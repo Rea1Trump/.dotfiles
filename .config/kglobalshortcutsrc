@@ -1,0 +1,12 @@
+[juk]
+_k_friendly_name=JuK
+back=Ctrl+Alt+Left,Ctrl+Alt+Left,上一曲
+forward=Ctrl+Alt+Right,Ctrl+Alt+Right,下一曲(N)
+forwardAlbum=Ctrl+Alt+Up,Ctrl+Alt+Up,播放下一张专辑
+mute=Ctrl+Alt+M,Ctrl+Alt+M,静音
+playPause=Ctrl+Alt+P,Ctrl+Alt+P,播放/暂停
+seekBack=Ctrl+Alt+Shift+Left,Ctrl+Alt+Shift+Left,快退
+seekForward=Ctrl+Alt+Shift+Right,Ctrl+Alt+Shift+Right,快进
+stop=Ctrl+Alt+S,Ctrl+Alt+S,停止(S)
+volumeDown=Ctrl+Alt+Shift+Down,Ctrl+Alt+Shift+Down,减小音量
+volumeUp=Ctrl+Alt+Shift+Up,Ctrl+Alt+Shift+Up,增大音量

@@ -31,7 +31,7 @@ definekey top L-q close
 #------------------------------------------------------------------------------#
 #                                  Input                                       #
 #- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - #
-# Well, there even no example config for the input device.
+# Check the example at the end of this config.
 input type:touchpad tap enabled
 input type:touchpad natural_scroll enabled
 
@@ -132,11 +132,13 @@ definekey top XF86_Switch_VT_9 switchvt 9
 ######################
 #Bind Function keys
 ######################
+
+# Only the XF86Audio* in FreeBSD is ok.
 definekey top XF86AudioMute exec pactl set-sink-mute 0 toggle
 definekey top XF86AudioLowerVolume exec pactl set-sink-mute 0 off&&amixer set Master 1%-
 definekey top XF86AudioRaiseVolume exec pactl set-sink-mute 0 off&&amixer set Master 1%+
-definekey top XF86MonBrightnessDown exec xbacklight -dec 1
-definekey top XF86MonBrightnessUp exec xbacklight -inc 1
+#definekey top XF86MonBrightnessDown exec xbacklight -dec 1
+#definekey top XF86MonBrightnessUp exec xbacklight -inc 1
 
 ######################
 #Output configuration
