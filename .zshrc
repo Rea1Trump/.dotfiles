@@ -117,6 +117,9 @@ export XDG_STATE_HOME=$HOME/.local/state
 export XDG_RUNTIME_DIR=/tmp
 export MY_INCLUDE=$HOME/.local/include
 
+
+
+
 # For compiling to set the path of cc 
 # Check man cc for detail
 #export CPATH="/usr/local/include:/usr/local/include/pixman-1"
@@ -163,7 +166,8 @@ alias vib="vim ~/.scripts/status_panel.sh"
 # window manager edit & start
 
 ## hikari
-alias wmhk="hikari -a /usr/local/bin/waybar -c ~/.config/hikari/hikari.conf"
+#alias wmhk="hikari -a /usr/local/bin/waybar -c ~/.config/hikari/hikari.conf"
+alias wmhk="hikari -c ~/.config/hikari/hikari.conf"
 alias vihk="vim ~/.config/hikari/hikari.conf"
 ## wayfire
 alias viwf="vim ~/.config/wayfire/wayfire.ini"
@@ -181,6 +185,9 @@ alias wmrv="river"
 alias virv="vim ~/.config/river/init"
 ## cagebreak
 alias vicg="vim ~/.config/cagebreak/config"
+
+## dwl
+alias vidw="vim ~/.config/dwl/config.h"
 
 
 
