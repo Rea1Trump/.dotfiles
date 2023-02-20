@@ -9,6 +9,7 @@ application/x-extension-shtml=userapp-Firefox-K6FWZ1.desktop
 application/xhtml+xml=userapp-Firefox-K6FWZ1.desktop
 application/x-extension-xhtml=userapp-Firefox-K6FWZ1.desktop
 application/x-extension-xht=userapp-Firefox-K6FWZ1.desktop
+inode/directory=vifm.desktop
 
 [Added Associations]
 x-scheme-handler/http=userapp-Firefox-K6FWZ1.desktop;
@@ -21,3 +22,4 @@ application/x-extension-shtml=userapp-Firefox-K6FWZ1.desktop;
 application/xhtml+xml=userapp-Firefox-K6FWZ1.desktop;
 application/x-extension-xhtml=userapp-Firefox-K6FWZ1.desktop;
 application/x-extension-xht=userapp-Firefox-K6FWZ1.desktop;
+inode/directory=vifm.desktop;

@@ -74,6 +74,11 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 
+source ~/.config/alias_env_rc
+
+
+
+
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -103,116 +108,6 @@ source $ZSH/oh-my-zsh.sh
 
 
 
-
-
-
-
-
-#====================================================================#
-# The XDG Base Directory Specification
-# The values are the default ones
-export XDG_DATA_HOME=$HOME/.local/share
-export XDG_CONFIG_HOME=$HOME/.config
-export XDG_STATE_HOME=$HOME/.local/state
-export XDG_RUNTIME_DIR=/tmp
-export MY_INCLUDE=$HOME/.local/include
-
-
-
-
-# For compiling to set the path of cc 
-# Check man cc for detail
-#export CPATH="/usr/local/include:/usr/local/include/pixman-1"
-
-#export CPATH="$MY_INCLUDE:/usr/local/include/pixman-1:/include/local"
-
-# For compiling 
-#export PATH="$PATH:$HOME/.local"
-
-# The path for current record markdown file
-export CURRENT_RECORD="$HOME/Documents/records/$(date "+%Y-%m-%d.md")"
-
-
-
-
-
-
-# fast fast fast!!!!!!
-alias viz="vim ~/.zshrc"
-#alias vish="vim ~/.config/sxhkd/sxhkdrc"
-alias cdc="cd ~/.config"
-alias rb="doas reboot"
-alias vic="doas vim /etc/rc.conf"
-alias sz="source ~/.zshrc"
-alias vip="vim ~/.scripts/status_panel"
-alias rcd="vim ~/Documents/records/$(date "+%Y-%m-%d.md")"
-alias conf='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
-alias conf_add='conf add -A'
-alias conf_status='conf status'
-alias conf_push='conf push -u origin main'
-
-
-
-# local proxy on & off
-alias proxyon="export all_proxy=http://192.168.0.132:7890"
-alias proxyoff="unset all_proxy"
-
-# lemonbar
-alias vib="vim ~/.scripts/status_panel.sh"
-
-
-
-
-# window manager edit & start
-
-## hikari
-#alias wmhk="hikari -a /usr/local/bin/waybar -c ~/.config/hikari/hikari.conf"
-alias wmhk="hikari -c ~/.config/hikari/hikari.conf"
-alias vihk="vim ~/.config/hikari/hikari.conf"
-## wayfire
-alias viwf="vim ~/.config/wayfire/wayfire.ini"
-alias wmwf="wayfire -c ~/.config/wayfire/wayfire.ini"
-## sway
-alias wmsw="sway -c ~/.config/sway/config"
-alias visw="vim ~/.config/sway/config"
-## waybar
-alias viwb="vim ~/.config/waybar/config"
-## hyprland
-alias wmhb="Hyprland"
-alias vihb="vim ~/.config/hypr/hyprland.conf"
-## river
-alias wmrv="river"
-alias virv="vim ~/.config/river/init"
-## cagebreak
-alias vicg="vim ~/.config/cagebreak/config"
-
-## dwl
-alias vidw="vim ~/.config/dwl/config.h"
-
-
-
-alias cat="bat"
-alias battery="echo 'Battery life: $(sysctl -n hw.acpi.battery.life)'"
-alias cdrw="cd ~/Works/Rust"
-# alias nf="neofetch --acsii_distro"
-
-# control vol
-alias up="mixer vol +5"
-alias down="mixer vol -5"
-
-# lock
-alias slock="~/.scripts/lock.sh"
-
-# fcitx environment varies
-export XIM=fcitx
-export XIM_PROGRAM=fcitx
-export GTK_IM_MODULE=fcitx
-export QT_IM_MODULE=fcitx
-export XMODIFIERS=@im=fcitx
-
-# vi =vim
-alias vim="nvim"
-alias vi="nvim"
 
 
 
