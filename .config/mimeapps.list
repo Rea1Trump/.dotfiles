@@ -10,16 +10,16 @@ application/xhtml+xml=userapp-Firefox-K6FWZ1.desktop
 application/x-extension-xhtml=userapp-Firefox-K6FWZ1.desktop
 application/x-extension-xht=userapp-Firefox-K6FWZ1.desktop
 inode/directory=vifm.desktop
+text/plain=emacs.desktop
+x-scheme-handler/mailto=thunderbird.desktop
+text/calendar=emacs.desktop
 
 [Added Associations]
-x-scheme-handler/http=userapp-Firefox-K6FWZ1.desktop;
-x-scheme-handler/https=userapp-Firefox-K6FWZ1.desktop;
-x-scheme-handler/chrome=userapp-Firefox-K6FWZ1.desktop;
-text/html=userapp-Firefox-K6FWZ1.desktop;
-application/x-extension-htm=userapp-Firefox-K6FWZ1.desktop;
-application/x-extension-html=userapp-Firefox-K6FWZ1.desktop;
-application/x-extension-shtml=userapp-Firefox-K6FWZ1.desktop;
-application/xhtml+xml=userapp-Firefox-K6FWZ1.desktop;
-application/x-extension-xhtml=userapp-Firefox-K6FWZ1.desktop;
-application/x-extension-xht=userapp-Firefox-K6FWZ1.desktop;
-inode/directory=vifm.desktop;
+x-scheme-handler/http=userapp-Firefox-K6FWZ1.desktop;firefox.desktop;
+x-scheme-handler/https=userapp-Firefox-K6FWZ1.desktop;firefox.desktop;
+text/html=userapp-Firefox-K6FWZ1.desktop;firefox.desktop;
+application/xhtml+xml=userapp-Firefox-K6FWZ1.desktop;firefox.desktop;
+text/plain=nvim.desktop;emacs.desktop;
+x-scheme-handler/mailto=thunderbird.desktop;
+text/markdown=nvim.desktop;
+text/calendar=emacs.desktop;

@@ -37,6 +37,9 @@ alias vic="doas vim /etc/rc.conf"
 alias sz="source ~/.zshrc"
 alias vip="vim ~/.scripts/status_panel"
 alias rcd="vim ~/Documents/records/$(date "+%Y-%m-%d.md")"
+
+
+
 alias conf='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias conf_add='conf add -A'
 alias conf_status='conf status'
@@ -104,6 +107,11 @@ export XMODIFIERS=@im=fcitx
 # vi =vim
 alias vim="nvim"
 alias vi="nvim"
+
+
+export WLR_RENDERER=vulkan
+
+alias viae="vim ~/.config/alias_env_rc "
 
 
 

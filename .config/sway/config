@@ -51,7 +51,7 @@ output * bg /usr/local/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png 
 # Example configuration:
 #
  exec swayidle -w \
-          timeout 300 '$HOME/.scripts/lock.sh' \
+          timeout 600 '$HOME/.scripts/lock.sh' \
           timeout 600 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' \
           before-sleep '$HOME/.scripts/lock.sh'
 #

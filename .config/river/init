@@ -18,7 +18,7 @@
 
 ##### Super+Shift+Return to start an instance of foot (https://codeberg.org/dnkl/foot)
 # Super Return to start an instance of alacritty.
-riverctl map normal Super Return spawn alacritty
+riverctl map normal Super Return spawn foot
 
 # Super+Q to close the focused view
 riverctl map normal Super Q close
