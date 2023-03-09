@@ -183,8 +183,8 @@ done
 riverctl spawn '$HOME/.scripts/wallpaper.sh'
 #riverctl spawn '$HOME/.scripts/bar.sh'
 riverctl spawn waybar 
-riverctl border-color-focused 0x93a1a1
-riverctl border-color-unfocused 0x586e75
+#riverctl border-color-focused 0x93a1a1
+#riverctl border-color-unfocused 0x586e75
 
 
 

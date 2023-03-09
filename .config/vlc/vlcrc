@@ -485,7 +485,7 @@
 #oss-audio-device=
 
 # Software gain (float)
-#oss-gain=1.000000
+oss-gain=1.331000
 
 [setid] # Change the id of an elementary stream
 

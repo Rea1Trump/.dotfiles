@@ -2,7 +2,7 @@
 Show=true
 
 [MainWindow]
-State=AAAA/wAAAAD9AAAAAAAABVAAAAKJAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAIAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgAAAAAA/////wAAAAAAAAAAAAAAFgBwAGwAYQB5AFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAAAAAAA==
+State=AAAA/wAAAAD9AAAAAAAABU4AAAKHAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAIAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgAAAAAA/////wAAAAAAAAAAAAAAFgBwAGwAYQB5AFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAAAAAAA==
 ToolBarsMovable=Disabled
 eDP-1 Window-Maximized 1366x768 eDP-1=true
 
@@ -26,7 +26,7 @@ VisibleColumns=0,1,2,3,4,5,6,7
 [Playlists]
 CollectionListSortAscending=true
 CollectionListSortColumn=1
-DirectoryList[$e]=/usr/home/sigma/Musics
+DirectoryList[$e]=/usr/home/sigma/Musics,$HOME/Documents/rslsync/Books/Music
 ImportPlaylists=true
 showUpcoming=false
 

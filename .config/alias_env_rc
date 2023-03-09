@@ -82,7 +82,7 @@ alias vicg="vim ~/.config/cagebreak/config"
 
 ## dwl
 alias vidw="vim ~/.config/dwl/config.h"
-
+alias wmdw="dwl"
 
 
 alias cat="bat"
